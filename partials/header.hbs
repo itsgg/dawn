@@ -8,16 +8,16 @@
             {{/if}}
         </a>
     </div>
-    {{#if @site.navigation}}
     <div class="header-right">
-        {{navigation}}
+        {{#if @site.navigation}}
+            {{navigation}}
+        {{/if}}
         <button class="button-icon menu-item-button js-modal" data-modal="search" aria-label="Search">
             <svg class="icon">
                 <use xlink:href="#magnify"></use>
             </svg>
         </button>
     </div>
-    {{/if}}
 </header>
 
 {{#is "post"}}
